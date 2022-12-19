@@ -1,1 +1,3 @@
-# react_movie_app
+# Movie App
+
+React JS 
