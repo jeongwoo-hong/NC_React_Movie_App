@@ -1,14 +1,14 @@
 import React from "react";
 
-function Food() {
-  return <h1> I like Potato </h1>
+function Food({fav}) {
+  return <h1> I like {fav} </h1>
 }
 
 function App() {
   return (
   <div>
     <h1>Hello</h1>
-    <Food name="kimchi" />
+    <Food fav="kimchi" something={true}/>
   </div>
   )}
 
