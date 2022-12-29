@@ -17,6 +17,9 @@ const foodILike = [
   {
     name: "bibimbap",
   },
+  {
+    name: "naengmyeon",
+  },
 ]
 
 function App() {
