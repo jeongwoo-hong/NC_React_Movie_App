@@ -24,7 +24,7 @@ const foodILike = [
 
 function renderFood(dish) {
   console.log(dish)
-  return <Food />
+  return <Food name={dish.name} picture={dish.image}/>
 }
 
 function App() {
