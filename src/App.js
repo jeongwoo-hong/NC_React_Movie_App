@@ -1,7 +1,13 @@
 import React from "react";
 
-function Food({name}) {
-  return <h1> I like {name} </h1>
+function Food({name, picture}) {
+  return (
+    <div>
+       <h1> I like {name} </h1>
+       <img src={picture} alt={name} />
+    </div>
+   
+  )
 }
 
 const foodILike = [
