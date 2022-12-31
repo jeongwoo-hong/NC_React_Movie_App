@@ -6,25 +6,30 @@ function Food({name}) {
 
 const foodILike = [
   {
+    id: 1,
     name: "kimchi",
   },
   {
+    id: 2,
     name: "bulgogi",
   },
   {
+    id: 3,
     name: "ramen",
   },
   {
+    id: 4,
     name: "bibimbap",
   },
   {
+    id: 5,
     name: "naengmyeon",
   },
 ]
 
 function renderFood(dish) {
   console.log(dish)
-  return <Food name={dish.name} picture={dish.image}/>
+  return <Food key={dish.id} name={dish.name} picture={dish.image}/>
 }
 
 function App() {
