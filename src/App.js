@@ -22,12 +22,15 @@ const foodILike = [
   },
 ]
 
+function renderFood(dish) {
+  console.log(dish)
+
+}
+
 function App() {
   return (
   <div>
-    {foodILike.map(dish => (
-      <Food name={dish.name}/>
-    ))}
+    {foodILike.map(renderFood)}
   </div>
   )}
 
