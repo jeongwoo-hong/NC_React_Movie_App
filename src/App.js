@@ -31,6 +31,7 @@ function App() {
   return (
   <div>
     {foodILike.map(renderFood)}
+    {foodILike.map(renderFood)}
   </div>
   )}
 
