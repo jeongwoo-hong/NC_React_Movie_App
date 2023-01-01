@@ -1,14 +1,21 @@
 import React from "react";
-import ProoTypes from "prop-types"
+import PropTypes from "prop-types"
 
-function Food({name, picture}) {
+function Food({name, picture, rating}) {
   return (
     <div>
        <h1> I like {name} </h1>
+       <h4>{rating} / 5.0</h4>
        <img src={picture} alt={name} />
     </div>
    
   )
+}
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
 }
 
 const foodILike = [
@@ -41,7 +48,7 @@ const foodILike = [
 
 function renderFood(dish) {
   console.log(dish)
-  return <Food key={dish.id} name={dish.name} picture={dish.image}/>
+  return <Food key={dish.id} name={dish.name} picture={dish.image} rating={dish.rating}/>
 }
 
 function App() {
