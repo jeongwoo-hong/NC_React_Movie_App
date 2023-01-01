@@ -1,4 +1,5 @@
 import React from "react";
+import ProoTypes from "prop-types"
 
 function Food({name, picture}) {
   return (
@@ -14,22 +15,27 @@ const foodILike = [
   {
     id: 1,
     name: "kimchi",
+    rating : 5,
   },
   {
     id: 2,
     name: "bulgogi",
+    rating : 4,
   },
   {
     id: 3,
     name: "ramen",
+    rating :1,
   },
   {
     id: 4,
     name: "bibimbap",
+    rating : 4,
   },
   {
     id: 5,
     name: "naengmyeon",
+    rating : 2,
   },
 ]
 
