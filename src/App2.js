@@ -11,6 +11,9 @@ class App2 extends React.Component{
     minus = () => {
         this.setState(current => ({count: current.count - 1}))
     }
+    componentDidUpdate() {
+        console.log("i just updated")
+    }
     componentDidMount(){
         console.log("component rendered")
     }
