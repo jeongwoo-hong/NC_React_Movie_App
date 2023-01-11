@@ -17,6 +17,9 @@ class App2 extends React.Component{
     componentDidMount(){
         console.log("component rendered")
     }
+    componentWillUnmount(){
+        console.log("goodbye")
+    }
     render() {
         return (
             <div>
