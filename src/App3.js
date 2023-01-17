@@ -2,7 +2,8 @@ import React from "react";
 
 class App3 extends React.Component{
     state = {
-        isLoading: true
+        isLoading: true,
+        movies: []
     }
     componentDidMount(){
         setTimeout(() => {
