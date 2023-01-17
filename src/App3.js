@@ -7,7 +7,7 @@ class App3 extends React.Component{
         movies: []
     }
     getMovies = async () => {
-        const {data : {data : {movies}}} = await axios.get("https://yts-proxy.nomadcoders1.now.sh/list_movies.json")
+        const {data : {data : {movies}}} = await axios.get("https://yts-proxy.nomadcoders1.now.sh/list_movies.json?sort_by=rating")
         this.setState({movies, isLoading : false})
     }
     componentDidMount(){
