@@ -5,6 +5,7 @@ function Movie({id, year, title, summary, poster}) {
     return <h1>{title}</h1>
 }
 
+// eslint-disable-next-line react/no-typos
 Movie.PropTypes = {
     id: PropTypes.number.isRequired,
     year: PropTypes.number.isRequired,
